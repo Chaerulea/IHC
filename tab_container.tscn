@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4k5yxubvwo0h"]
+
+[ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://Inicio.tscn" id="1_bgja5"]
+[ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://Cuentanosdeti.tscn" id="2_1w5nn"]
+[ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://Estadisticas.tscn" id="3_v6y1q"]
+
+[node name="TabContainer" type="TabContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tabs_visible = false
+
+[node name="Control3" parent="." instance=ExtResource("1_bgja5")]
+layout_mode = 2
+
+[node name="Control" parent="." instance=ExtResource("2_1w5nn")]
+visible = false
+layout_mode = 2
+
+[node name="Control2" parent="." instance=ExtResource("3_v6y1q")]
+visible = false
+layout_mode = 2

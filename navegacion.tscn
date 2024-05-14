@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://duy0kbtmnmyu4"]
+
+[ext_resource type="Script" path="res://navegacion.gd" id="1_cuj5g"]
+[ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://Inicio.tscn" id="2_d6mmk"]
+[ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://Cuentanosdeti.tscn" id="2_r0o2m"]
+[ext_resource type="PackedScene" uid="uid://ct8p0jkag61ji" path="res://Principal.tscn" id="3_y34pc"]
+[ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://Estadisticas.tscn" id="4_t411x"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_7ppw2"]
+
+[node name="TabContainer" type="TabContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cuj5g")
+
+[node name="inicio" parent="." instance=ExtResource("2_d6mmk")]
+layout_mode = 2
+
+[node name="cuentanosDeTi" parent="." instance=ExtResource("2_r0o2m")]
+visible = false
+layout_mode = 2
+
+[node name="principal" parent="." instance=ExtResource("3_y34pc")]
+visible = false
+layout_mode = 2
+
+[node name="Button" parent="principal/CenterContainer/VBoxContainer/HBoxContainer3" index="0"]
+icon = SubResource("ViewportTexture_7ppw2")
+
+[node name="estadisticas" parent="." instance=ExtResource("4_t411x")]
+visible = false
+layout_mode = 2
+
+[connection signal="pressed" from="inicio/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed_iniciar"]
+[connection signal="pressed" from="cuentanosDeTi/CenterContainer/VBoxContainer/HBoxContainer4/Button" to="." method="_on_button_pressed_cuentanos_regresar"]
+[connection signal="pressed" from="principal/CenterContainer/VBoxContainer/HBoxContainer3/Button" to="." method="_on_button_pressed_estadisticas"]
+[connection signal="pressed" from="principal/CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed_cuentanos"]
+[connection signal="pressed" from="estadisticas/CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed_regresar_estadisticas"]
+
+[editable path="inicio"]
+[editable path="cuentanosDeTi"]
+[editable path="principal"]
+[editable path="estadisticas"]

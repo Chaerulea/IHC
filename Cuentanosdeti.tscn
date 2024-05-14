@@ -79,3 +79,11 @@ text = "Correo de tu Guardian"
 [node name="LineEdit" type="LineEdit" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Regresar"

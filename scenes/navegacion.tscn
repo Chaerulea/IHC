@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://duy0kbtmnmyu4"]
 
-[ext_resource type="Script" path="res://navegacion.gd" id="1_cuj5g"]
-[ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://Inicio.tscn" id="2_d6mmk"]
-[ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://Cuentanosdeti.tscn" id="2_r0o2m"]
-[ext_resource type="PackedScene" uid="uid://ct8p0jkag61ji" path="res://Principal.tscn" id="3_y34pc"]
-[ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://Estadisticas.tscn" id="4_t411x"]
+[ext_resource type="Script" path="res://scenes/navegacion.gd" id="1_r6icn"]
+[ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://scenes/Inicio.tscn" id="2_ic8pu"]
+[ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://scenes/Cuentanosdeti.tscn" id="3_htflv"]
+[ext_resource type="PackedScene" uid="uid://ct8p0jkag61ji" path="res://scenes/Principal.tscn" id="4_hkmq6"]
+[ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://scenes/Estadisticas.tscn" id="5_3ionm"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_7ppw2"]
 
@@ -14,23 +14,23 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_cuj5g")
+script = ExtResource("1_r6icn")
 
-[node name="inicio" parent="." instance=ExtResource("2_d6mmk")]
+[node name="inicio" parent="." instance=ExtResource("2_ic8pu")]
 layout_mode = 2
 
-[node name="cuentanosDeTi" parent="." instance=ExtResource("2_r0o2m")]
+[node name="cuentanosDeTi" parent="." instance=ExtResource("3_htflv")]
 visible = false
 layout_mode = 2
 
-[node name="principal" parent="." instance=ExtResource("3_y34pc")]
+[node name="principal" parent="." instance=ExtResource("4_hkmq6")]
 visible = false
 layout_mode = 2
 
 [node name="Button" parent="principal/CenterContainer/VBoxContainer/HBoxContainer3" index="0"]
 icon = SubResource("ViewportTexture_7ppw2")
 
-[node name="estadisticas" parent="." instance=ExtResource("4_t411x")]
+[node name="estadisticas" parent="." instance=ExtResource("5_3ionm")]
 visible = false
 layout_mode = 2
 

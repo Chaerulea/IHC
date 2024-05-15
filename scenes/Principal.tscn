@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ct8p0jkag61ji"]
 
-[ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://344260-2645729686.jpg" id="1_gcoyr"]
+[ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_gcoyr"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_dexn2"]
 

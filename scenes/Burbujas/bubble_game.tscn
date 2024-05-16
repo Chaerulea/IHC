@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://c80hdmw2a4le5" path="res://scenes/Burbujas/bubble.tscn" id="1_660gs"]
 [ext_resource type="Script" path="res://scenes/Burbujas/bubble_game_logic.gd" id="1_hpnvb"]
 [ext_resource type="Texture2D" uid="uid://cvnvpwkrgqf43" path="res://assets/background.png" id="3_eg72a"]
-[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="3_vjobo"]
+[ext_resource type="FontVariation" path="res://assets/DefaultFonr.tres" id="3_vjobo"]
 [ext_resource type="PackedScene" uid="uid://oireobhhu5e5" path="res://scenes/Burbujas/calculadora.tscn" id="3_xljxu"]
 [ext_resource type="Script" path="res://scenes/Burbujas/CalculadoraPosicion.gd" id="4_8qbhw"]
 

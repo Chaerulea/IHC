@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjkus0ka5vevv"]
+[gd_scene load_steps=3 format=3 uid="uid://bj658pkc4pf38"]
 
 [ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_gsbt4"]
-[ext_resource type="Texture2D" uid="uid://cd6ya58swcja1" path="res://assets/Light-1342079976.png" id="2_1a2ui"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_dexn2"]
 
@@ -44,8 +43,7 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-size_flags_horizontal = 0
-icon = ExtResource("2_1a2ui")
+text = "Juegos"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(500, 0)
@@ -53,7 +51,7 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
-text = "Estadisticas"
+text = "Burbucuentas"
 icon = SubResource("ViewportTexture_dexn2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
@@ -61,4 +59,4 @@ layout_mode = 2
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "¡Cuentanos de ti!"
+text = "Granja Patron"

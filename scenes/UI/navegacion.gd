@@ -29,3 +29,7 @@ func _on_button_pressed_regresar_estadisticas():
 func _on_button_pressed_iniciar():
 	set_current_tab(2)
 	print(("Inicializando"))
+
+func _on_button_pressed_juegos():
+	set_current_tab(4)
+	print(("Juegos"))

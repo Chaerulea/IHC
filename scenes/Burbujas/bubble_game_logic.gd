@@ -4,17 +4,55 @@ var mistakes = 0
 var accumulated_delta = 0
 var aciertos = 0
 var lista_burbujas = []
+var timer = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	randomize()
+	start_game()
+
+
+func start_game():
+	_instance_bubble()
+	mistakes = 0
+	aciertos = 0
+	timer = get_tree().create_timer(120) #2 minutes to complete the game
+	timer.timeout.connect(end_game)
+
+func end_game():
+	timer.stop()
+	print("Game Over")
+	print("Score: ", aciertos)
+	print("Mistakes: ", mistakes)
+	#Go back to the main menu
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):
 	accumulated_delta += delta
 	#Se ejecuta cada que delta acumulada es 6
-	if(accumulated_delta > 2):
+	if(accumulated_delta > 4):
 		_instance_bubble()
 		accumulated_delta = 0
+
+func _input(event):
+	#If the user presses the enter key
+	if(event is InputEventKey):
+		if not event.pressed:
+			return
+		if(event.keycode == KEY_ENTER):
+			_on_input_text_submitted(get_node("%input").text)
+			get_node("%input").text = ""
+	#If the user presses the backspace key
+	if(event is InputEventKey):
+		if(event.keycode == KEY_BACKSPACE):
+			get_node("%input").text = get_node("%input").text.substr(0, get_node("%input").text.length() - 1)
+	#If the user presses any number key
+	if(event is InputEventKey):
+		if(event.keycode == KEY_0 or event.keycode == KEY_1 or event.keycode == KEY_2 or event.keycode == KEY_3 or event.keycode == KEY_4 or event.keycode == KEY_5 or event.keycode == KEY_6 or event.keycode == KEY_7 or event.keycode == KEY_8 or event.keycode == KEY_9):
+			get_node("%input").text = get_node("%input").text + str(event.keycode - 48)
+
+func _on_pad_number_pressed(which):
+	get_node("%input").text = get_node("%input").text + str(which)
 
 func _on_area_2d_body_entered_upper_limit(_body):
 	if(_body is RigidBody2D):

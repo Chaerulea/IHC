@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://db6gx46lv4i53"]
+[gd_scene load_steps=3 format=3 uid="uid://db6gx46lv4i53"]
 
 [ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_5p8uj"]
+[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="2_0bl2g"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -34,16 +35,24 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 6
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("2_0bl2g")
 text = "Estadisticas"
 horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+alignment = 1
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("2_0bl2g")
 text = "Regresar"

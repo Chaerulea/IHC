@@ -1,36 +1,57 @@
-[gd_scene load_steps=4 format=3 uid="uid://c80hdmw2a4le5"]
+[gd_scene load_steps=5 format=3 uid="uid://c80hdmw2a4le5"]
 
-[ext_resource type="Texture2D" uid="uid://b741ittbp4y8x" path="res://assets/icon.svg" id="1_dopue"]
 [ext_resource type="Script" path="res://scenes/Burbujas/bubble.gd" id="1_ppw0v"]
+[ext_resource type="Texture2D" uid="uid://bhfgak3e1ct60" path="res://scenes/Burbujas/BubbleSimple.png" id="2_k1j24"]
+[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="3_feir3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yk4n4"]
+radius = 6.2
 
 [node name="bubble" type="RigidBody2D"]
-gravity_scale = -0.2
+gravity_scale = -0.01
 script = ExtResource("1_ppw0v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-1, 3)
-texture = ExtResource("1_dopue")
+position = Vector2(-1, 9)
+scale = Vector2(0.273438, 0.273438)
+texture = ExtResource("2_k1j24")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(5, 5)
 shape = SubResource("CircleShape2D_yk4n4")
 
 [node name="digito1" type="Label" parent="."]
-offset_left = -18.0
-offset_top = -56.0
-offset_right = 22.0
-offset_bottom = -33.0
+offset_left = -64.0
+offset_top = -44.0
+offset_right = 65.0
+offset_bottom = -16.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_feir3")
+theme_override_font_sizes/font_size = 40
+text = "TestTesttes"
+horizontal_alignment = 1
 
 [node name="operador" type="Label" parent="."]
-offset_left = -18.0
-offset_top = -13.0
-offset_right = 22.0
-offset_bottom = 10.0
+offset_left = -64.0
+offset_top = -5.0
+offset_right = 65.0
+offset_bottom = 23.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_feir3")
+theme_override_font_sizes/font_size = 40
+text = "TestTesttes"
+horizontal_alignment = 1
 
 [node name="digito2" type="Label" parent="."]
-offset_left = -18.0
-offset_top = 39.0
-offset_right = 22.0
-offset_bottom = 62.0
+offset_left = -64.0
+offset_top = 29.0
+offset_right = 65.0
+offset_bottom = 57.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 12
+theme_override_fonts/font = ExtResource("3_feir3")
+theme_override_font_sizes/font_size = 40
+text = "TestTesttes"
+horizontal_alignment = 1

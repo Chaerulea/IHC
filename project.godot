@@ -12,8 +12,14 @@ config_version=5
 
 config/name="IHC"
 run/main_scene="res://scenes/UI/Cuentanosdeti.tscn"
-config/features=PackedStringArray("4.1", "Mobile")
+config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://assets/icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/resizable=false
 
 [rendering]
 

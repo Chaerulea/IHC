@@ -23,7 +23,7 @@ func generarOperaciones():
 	generar_numeros()
 	operacion = int(randf_range(1, 4)) #Genera un número aleatorio entre 1 y 4
 	if(operacion == 1):
-		$operador.text = "*"
+		$operador.text = "X"
 		resultado = operando1 * operando2
 	elif(operacion == 2):
 		$operador.text = "+"
@@ -33,6 +33,7 @@ func generarOperaciones():
 		$operador.text = "-"
 		resultado = operando1 - operando2
 	elif(operacion == 4):
+		validar_division()
 		$operador.text = "/"
 		resultado /= operando2
 
@@ -43,12 +44,13 @@ func generar_numeros():
 	$digito2.text = str(operando2)
 
 func validar_division():
-	if(operando1 % operando2 != 0):
+	if operando1 % operando2 != 0:
 		generar_numeros()
 		validar_division()
+	resultado = operando1 / operando2
 
 func validar_resultado():
-	if(resultado < 0):
+	if(resultado < 0 or operando2 > operando1):
 		generar_numeros()
 		validar_resultado()
 

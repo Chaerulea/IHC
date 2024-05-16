@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://uh8sa2doy4fy"]
+[gd_scene load_steps=3 format=3 uid="uid://uh8sa2doy4fy"]
 
-[ext_resource type="Texture2D" uid="uid://b741ittbp4y8x" path="res://assets/icon.svg" id="1_i7hdl"]
+[ext_resource type="Texture2D" uid="uid://cbu0kd0t8ei7j" path="res://logo.svg" id="1_yynys"]
+[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="2_akrew"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -31,9 +32,12 @@ grow_vertical = 2
 layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 300)
 layout_mode = 2
-texture = ExtResource("1_i7hdl")
+texture = ExtResource("1_yynys")
+expand_mode = 3
 
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("2_akrew")
 text = "¡Acceder!"

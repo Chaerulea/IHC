@@ -1,7 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4m2s0hedfae8"]
+[gd_scene load_steps=4 format=3 uid="uid://d4m2s0hedfae8"]
 
-[ext_resource type="Texture2D" uid="uid://ouyq4hwfatq7" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
+[ext_resource type="Texture2D" uid="uid://b5knjfgauoqli" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
 [ext_resource type="Script" path="res://Patrones/Patterns.gd" id="1_s2fea"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i80eb"]
+bg_color = Color(3.85046e-06, 0.770467, 0.943597, 0.145098)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(3.85046e-07, 0.700319, 0.747403, 1)
 
 [node name="Pattern" type="Node2D"]
 script = ExtResource("1_s2fea")
@@ -13,11 +21,13 @@ offset_right = 250.0
 offset_bottom = 250.0
 scale = Vector2(1e-05, 1e-05)
 
-[node name="ColorRect" type="ColorRect" parent="CenterContainer"]
+[node name="ColorRect" type="Panel" parent="CenterContainer"]
+layout_mode = 0
 offset_left = -3.0
 offset_top = -3.0
 offset_right = 254.0
 offset_bottom = 254.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_i80eb")
 
 [node name="GridContainer" type="GridContainer" parent="CenterContainer"]
 custom_minimum_size = Vector2(250, 250)

@@ -1,0 +1,76 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4m2s0hedfae8"]
+
+[ext_resource type="Texture2D" uid="uid://ouyq4hwfatq7" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
+
+[node name="Pattern" type="Node2D"]
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_right = 400.0
+offset_bottom = 400.0
+scale = Vector2(0.5, 0.5)
+columns = 3
+
+[node name="S2D" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="S2D2" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="S2D5" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+
+[node name="S2D6" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+
+[node name="S2D7" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+
+[node name="S2D8" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+
+[node name="S2D9" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+
+[node name="S2D3" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1
+
+[node name="S2D4" type="TextureRect" parent="GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_h4457")
+expand_mode = 1

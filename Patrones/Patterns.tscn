@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4m2s0hedfae8"]
 
-[ext_resource type="Texture2D" uid="uid://b437bgmj4a5nd" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
+[ext_resource type="Texture2D" uid="uid://kdlv4a7b1gth" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
 [ext_resource type="Script" path="res://Patrones/Patterns.gd" id="1_s2fea"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i80eb"]

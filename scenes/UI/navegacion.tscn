@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://duy0kbtmnmyu4"]
 
-[ext_resource type="Script" path="res://scenes/navegacion.gd" id="1_r6icn"]
-[ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://scenes/Inicio.tscn" id="2_ic8pu"]
-[ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://scenes/Cuentanosdeti.tscn" id="3_htflv"]
-[ext_resource type="PackedScene" uid="uid://ct8p0jkag61ji" path="res://scenes/Principal.tscn" id="4_hkmq6"]
-[ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://scenes/Estadisticas.tscn" id="5_3ionm"]
+[ext_resource type="Script" path="res://scenes/UI/navegacion.gd" id="1_r6icn"]
+[ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://scenes/UI/Inicio.tscn" id="2_ic8pu"]
+[ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://scenes/UI/Cuentanosdeti.tscn" id="3_htflv"]
+[ext_resource type="PackedScene" uid="uid://ct8p0jkag61ji" path="res://scenes/UI/Principal.tscn" id="4_hkmq6"]
+[ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://scenes/UI/Estadisticas.tscn" id="5_3ionm"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_7ppw2"]
 

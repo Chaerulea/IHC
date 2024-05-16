@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://miva3bciwuu6"]
 
-[ext_resource type="Script" path="res://PatronesJuego.gd" id="1_ql0d7"]
-[ext_resource type="PackedScene" uid="uid://d4m2s0hedfae8" path="res://Patrones/Patterns.tscn" id="2_y2byn"]
-[ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="3_w6g6n"]
+[ext_resource type="Script" path="res://scenes/Patrones/PatronesJuego.gd" id="1_g2me8"]
+[ext_resource type="PackedScene" uid="uid://d4m2s0hedfae8" path="res://scenes/Patrones/Patterns.tscn" id="2_7cg43"]
+[ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="3_yd8oi"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,8 +11,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_ql0d7")
-pattern = ExtResource("2_y2byn")
+script = ExtResource("1_g2me8")
+pattern = ExtResource("2_7cg43")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -21,7 +21,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_w6g6n")
+texture = ExtResource("3_yd8oi")
 expand_mode = 1
 stretch_mode = 3
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://bgtj1nojjm0jc"]
 
-[ext_resource type="PackedScene" uid="uid://c80hdmw2a4le5" path="res://scenes/bubble.tscn" id="1_660gs"]
-[ext_resource type="Script" path="res://scenes/bubble_game_logic.gd" id="1_hpnvb"]
-[ext_resource type="PackedScene" uid="uid://oireobhhu5e5" path="res://scenes/calculadora.tscn" id="3_xljxu"]
+[ext_resource type="PackedScene" uid="uid://c80hdmw2a4le5" path="res://scenes/Burbujas/bubble.tscn" id="1_660gs"]
+[ext_resource type="Script" path="res://scenes/Burbujas/bubble_game_logic.gd" id="1_hpnvb"]
+[ext_resource type="PackedScene" uid="uid://oireobhhu5e5" path="res://scenes/Burbujas/calculadora.tscn" id="3_xljxu"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_eq8tq"]
 normal = Vector2(0, 1)

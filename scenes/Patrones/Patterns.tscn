@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4m2s0hedfae8"]
 
-[ext_resource type="Texture2D" uid="uid://dxw4i1r5ean41" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
-[ext_resource type="Script" path="res://Patrones/Patterns.gd" id="1_s2fea"]
+[ext_resource type="Script" path="res://scenes/Patrones/Patterns.gd" id="1_vvuuo"]
+[ext_resource type="Texture2D" uid="uid://dxw4i1r5ean41" path="res://assets/PNG/Yellow/letter.png" id="2_xmu1f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i80eb"]
 bg_color = Color(3.85046e-06, 0.770467, 0.943597, 0.145098)
@@ -17,7 +17,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 250.0
 offset_bottom = 250.0
-script = ExtResource("1_s2fea")
+script = ExtResource("1_vvuuo")
 
 [node name="CenterContainer" type="Control" parent="."]
 layout_mode = 1
@@ -55,7 +55,7 @@ columns = 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 stretch_mode = 4
 
@@ -63,7 +63,7 @@ stretch_mode = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 stretch_mode = 4
 
@@ -71,49 +71,49 @@ stretch_mode = 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="S2D6" type="TextureRect" parent="CenterContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="S2D7" type="TextureRect" parent="CenterContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="S2D8" type="TextureRect" parent="CenterContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="S2D9" type="TextureRect" parent="CenterContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="S2D3" type="TextureRect" parent="CenterContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="S2D4" type="TextureRect" parent="CenterContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-texture = ExtResource("1_h4457")
+texture = ExtResource("2_xmu1f")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="CenterContainer"]

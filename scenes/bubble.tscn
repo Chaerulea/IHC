@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://c80hdmw2a4le5"]
+[gd_scene load_steps=4 format=3 uid="uid://c80hdmw2a4le5"]
 
 [ext_resource type="Texture2D" uid="uid://b741ittbp4y8x" path="res://assets/icon.svg" id="1_dopue"]
+[ext_resource type="Script" path="res://scenes/bubble.gd" id="1_ppw0v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yk4n4"]
 
 [node name="bubble" type="RigidBody2D"]
 gravity_scale = -0.2
+script = ExtResource("1_ppw0v")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1, 3)
@@ -14,3 +16,21 @@ texture = ExtResource("1_dopue")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(5, 5)
 shape = SubResource("CircleShape2D_yk4n4")
+
+[node name="digito1" type="Label" parent="."]
+offset_left = -18.0
+offset_top = -56.0
+offset_right = 22.0
+offset_bottom = -33.0
+
+[node name="operador" type="Label" parent="."]
+offset_left = -18.0
+offset_top = -13.0
+offset_right = 22.0
+offset_bottom = 10.0
+
+[node name="digito2" type="Label" parent="."]
+offset_left = -18.0
+offset_top = 39.0
+offset_right = 22.0
+offset_bottom = 62.0

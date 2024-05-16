@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bgtj1nojjm0jc"]
+[gd_scene load_steps=6 format=3 uid="uid://bgtj1nojjm0jc"]
 
 [ext_resource type="PackedScene" uid="uid://c80hdmw2a4le5" path="res://scenes/bubble.tscn" id="1_660gs"]
 [ext_resource type="Script" path="res://scenes/bubble_game_logic.gd" id="1_hpnvb"]
+[ext_resource type="PackedScene" uid="uid://oireobhhu5e5" path="res://scenes/calculadora.tscn" id="3_xljxu"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_eq8tq"]
 normal = Vector2(0, 1)
@@ -37,4 +38,18 @@ shape = SubResource("RectangleShape2D_0h6dn")
 position = Vector2(593, 647)
 scale = Vector2(-63.146, 1677.76)
 
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 938.0
+offset_top = 370.0
+offset_right = 1044.0
+offset_bottom = 506.0
+scale = Vector2(2, 2)
+
+[node name="calculadora" parent="VBoxContainer" instance=ExtResource("3_xljxu")]
+layout_mode = 2
+
+[node name="input" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered_upper_limit"]
+[connection signal="text_submitted" from="VBoxContainer/input" to="." method="_on_input_text_submitted"]

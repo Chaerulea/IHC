@@ -28,3 +28,4 @@ func _instance_bubble():
 	var burbuja_instance = burbuja.instantiate()
 	add_child(burbuja_instance)
 	burbuja_instance.position = Vector2(randf_range(0, 800), 0)+$Marker2D.position
+

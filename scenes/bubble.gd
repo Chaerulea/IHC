@@ -2,16 +2,22 @@ extends RigidBody2D
 var operando1 = 0
 var operando2 = 0
 var operacion = 0
-var resultado = 0
-var respuesta = 0
-# Called when the node enters the scene tree for the first time.
+var resultado = 0# Called when the node enters the scene tree for the first time.
 func _ready():
 	generarOperaciones()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+#func _process(delta):
+#	pass
+func evaluar(new_text:String):
+	print(new_text)
+	if(new_text == str(resultado)):
+		print("Correcto")
+		return true
+	else:
+		print("Incorrecto")
+		return false
 
 func generarOperaciones():
 	generar_numeros()

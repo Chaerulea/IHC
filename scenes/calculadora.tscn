@@ -7,7 +7,7 @@ offset_right = 1102.0
 offset_bottom = 555.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-columns = 5
+columns = 3
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 2
@@ -63,37 +63,14 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "9"
 
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+
 [node name="Button10" type="Button" parent="."]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "0"
 
-[node name="Button11" type="Button" parent="."]
+[node name="Control2" type="Control" parent="."]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "+"
-
-[node name="Button12" type="Button" parent="."]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "-"
-
-[node name="Button13" type="Button" parent="."]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Button14" type="Button" parent="."]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "*"
-
-[node name="Button15" type="Button" parent="."]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-text = "/"

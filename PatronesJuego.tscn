@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bstxdyybhk2fo"]
+[gd_scene load_steps=4 format=3 uid="uid://miva3bciwuu6"]
 
 [ext_resource type="Script" path="res://PatronesJuego.gd" id="1_ql0d7"]
+[ext_resource type="PackedScene" uid="uid://d4m2s0hedfae8" path="res://Patrones/Patterns.tscn" id="2_y2byn"]
+[ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="3_w6g6n"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,6 +12,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ql0d7")
+pattern = ExtResource("2_y2byn")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_w6g6n")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.509804, 0.537255, 0.219608, 0.368627)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1

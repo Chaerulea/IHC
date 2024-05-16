@@ -1,11 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://bgtj1nojjm0jc"]
+[gd_scene load_steps=9 format=3 uid="uid://bgtj1nojjm0jc"]
 
 [ext_resource type="PackedScene" uid="uid://c80hdmw2a4le5" path="res://scenes/Burbujas/bubble.tscn" id="1_660gs"]
 [ext_resource type="Script" path="res://scenes/Burbujas/bubble_game_logic.gd" id="1_hpnvb"]
 [ext_resource type="Texture2D" uid="uid://cvnvpwkrgqf43" path="res://assets/background.png" id="3_eg72a"]
-[ext_resource type="FontVariation" path="res://assets/DefaultFonr.tres" id="3_vjobo"]
 [ext_resource type="PackedScene" uid="uid://oireobhhu5e5" path="res://scenes/Burbujas/calculadora.tscn" id="3_xljxu"]
 [ext_resource type="Script" path="res://scenes/Burbujas/CalculadoraPosicion.gd" id="4_8qbhw"]
+[ext_resource type="Theme" uid="uid://7ldxcmnr25un" path="res://theme.tres" id="5_4y6qd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_eq8tq"]
 normal = Vector2(0, 1)
@@ -13,62 +13,6 @@ distance = -119.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0h6dn"]
 size = Vector2(46.2667, 20)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c2ojq"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_whyqn"]
-bg_color = Color(0.248852, 0.581856, 0.542585, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_color = Color(0.483821, 0.886461, 0.810211, 1)
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdaku"]
-bg_color = Color(0.356617, 0.675966, 0.52455, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_color = Color(0.554075, 0.887182, 0.680564, 1)
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_31las"]
-bg_color = Color(0.529917, 0.637395, 0.493937, 1)
-border_width_left = 3
-border_width_top = 3
-border_width_right = 3
-border_color = Color(0.719956, 0.850781, 0.60445, 1)
-border_blend = true
-corner_radius_top_left = 5
-corner_radius_top_right = 5
-corner_radius_bottom_right = 5
-corner_radius_bottom_left = 5
-
-[sub_resource type="Theme" id="Theme_gs2ct"]
-Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
-Button/colors/font_outline_color = Color(0, 0, 0, 1)
-Button/constants/outline_size = 12
-Button/font_sizes/font_size = 32
-Button/fonts/font = ExtResource("3_vjobo")
-Button/styles/focus = SubResource("StyleBoxEmpty_c2ojq")
-Button/styles/hover = SubResource("StyleBoxFlat_whyqn")
-Button/styles/normal = SubResource("StyleBoxFlat_kdaku")
-Button/styles/pressed = SubResource("StyleBoxFlat_31las")
-LineEdit/colors/font_outline_color = Color(0, 0, 0, 1)
-LineEdit/constants/outline_size = 8
-LineEdit/font_sizes/font_size = 32
-LineEdit/fonts/font = ExtResource("3_vjobo")
-LineEdit/styles/focus = SubResource("StyleBoxFlat_whyqn")
-LineEdit/styles/normal = SubResource("StyleBoxFlat_kdaku")
-LineEdit/styles/read_only = SubResource("StyleBoxFlat_whyqn")
 
 [node name="Node2" type="Node"]
 
@@ -135,7 +79,7 @@ size_flags_stretch_ratio = 3.8
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-theme = SubResource("Theme_gs2ct")
+theme = ExtResource("5_4y6qd")
 
 [node name="input" type="LineEdit" parent="Control/VBoxContainer/HBoxContainer/VBoxContainer"]
 unique_name_in_owner = true

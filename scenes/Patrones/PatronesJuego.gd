@@ -24,7 +24,6 @@ func start_game():
 	timer.timeout.connect(end_game)
 
 func end_game():
-	timer.stop()
 	print("Game Over")
 	print("Score: ", score)
 	print("Mistakes: ", mistakes)

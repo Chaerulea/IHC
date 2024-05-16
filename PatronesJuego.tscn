@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bstxdyybhk2fo"]
 
-[ext_resource type="Texture2D" uid="uid://b5knjfgauoqli" path="res://assets/PNG/Yellow/letter.png" id="1_kpq5s"]
+[ext_resource type="Script" path="res://PatronesJuego.gd" id="1_ql0d7"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ql0d7")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
@@ -35,18 +36,6 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 columns = 3
-
-[node name="Letter" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
-layout_mode = 2
-texture = ExtResource("1_kpq5s")
-
-[node name="Letter2" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
-layout_mode = 2
-texture = ExtResource("1_kpq5s")
-
-[node name="Letter3" type="TextureRect" parent="HBoxContainer/VBoxContainer/GridContainer"]
-layout_mode = 2
-texture = ExtResource("1_kpq5s")
 
 [node name="Control" type="Control" parent="HBoxContainer/VBoxContainer"]
 layout_mode = 2

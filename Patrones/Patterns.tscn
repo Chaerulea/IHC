@@ -1,9 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d4m2s0hedfae8"]
 
-<<<<<<< HEAD
-[ext_resource type="Texture2D" uid="uid://cibu8awrr5ff1" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
-=======
-[ext_resource type="Texture2D" uid="uid://b5knjfgauoqli" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
+[ext_resource type="Texture2D" uid="uid://b437bgmj4a5nd" path="res://assets/PNG/Yellow/letter.png" id="1_h4457"]
 [ext_resource type="Script" path="res://Patrones/Patterns.gd" id="1_s2fea"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i80eb"]
@@ -13,7 +10,6 @@ border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
 border_color = Color(3.85046e-07, 0.700319, 0.747403, 1)
->>>>>>> cb1bd8a105a18ea4594575603241faf40fb11146
 
 [node name="Pattern" type="Node2D"]
 script = ExtResource("1_s2fea")

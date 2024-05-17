@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bj658pkc4pf38"]
+[gd_scene load_steps=5 format=3 uid="uid://bj658pkc4pf38"]
 
+[ext_resource type="Script" path="res://scenes/UI/Menu Juegos.gd" id="1_b5hxm"]
 [ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_gsbt4"]
+[ext_resource type="Theme" uid="uid://cnerygrexvys3" path="res://theme.tres" id="1_nhcwr"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_dexn2"]
 
@@ -11,6 +13,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_nhcwr")
+script = ExtResource("1_b5hxm")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -41,15 +45,15 @@ layout_mode = 2
 custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
-text = "Juegos"
+text = "Selecciona el juego"
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
 custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+[node name="burbucuentas" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 text = "Burbucuentas"
 icon = SubResource("ViewportTexture_dexn2")
@@ -57,6 +61,16 @@ icon = SubResource("ViewportTexture_dexn2")
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
+[node name="granjapatron" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Granja Patron"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer4"]
+layout_mode = 2
+text = "Regresar"
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer3/burbucuentas" to="." method="_on_burbucuentas_pressed_iniciar"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/HBoxContainer/granjapatron" to="." method="_on_granjapatron_pressed_iniciar"]

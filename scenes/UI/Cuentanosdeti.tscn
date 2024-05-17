@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dvcnmynioehs"]
 
 [ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_gb7dq"]
-[ext_resource type="Theme" uid="uid://7ldxcmnr25un" path="res://theme.tres" id="1_uvswt"]
+[ext_resource type="Theme" uid="uid://cnerygrexvys3" path="res://theme.tres" id="1_yvg81"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -10,7 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_uvswt")
+theme = ExtResource("1_yvg81")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1

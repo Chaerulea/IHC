@@ -33,3 +33,7 @@ func _on_button_pressed_iniciar():
 func _on_button_pressed_juegos():
 	set_current_tab(4)
 	print(("Juegos"))
+
+func _on_button_pressed_regresar_juegos():
+	set_current_tab(2)
+	print(("Regresando desde juegos"))

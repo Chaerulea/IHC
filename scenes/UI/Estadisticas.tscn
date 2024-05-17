@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://db6gx46lv4i53"]
 
 [ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_5p8uj"]
-[ext_resource type="Theme" uid="uid://7ldxcmnr25un" path="res://theme.tres" id="1_j4ibh"]
-[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="2_0bl2g"]
+[ext_resource type="Theme" uid="uid://cnerygrexvys3" path="res://theme.tres" id="1_inr74"]
+[ext_resource type="FontVariation" path="res://assets/DefaultFonr.tres" id="2_0bl2g"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,7 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_j4ibh")
+theme = ExtResource("1_inr74")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1

@@ -1,8 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ct8p0jkag61ji"]
 
 [ext_resource type="Texture2D" uid="uid://2kx13tlbqmva" path="res://assets/344260-2645729686.jpg" id="1_gcoyr"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_dexn2"]
+[ext_resource type="Theme" uid="uid://cnerygrexvys3" path="res://theme.tres" id="1_mihmr"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_mihmr")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1
@@ -41,10 +41,9 @@ layout_mode = 2
 custom_minimum_size = Vector2(500, 0)
 layout_mode = 2
 
-[node name="Button" type="Button" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
+[node name="Button" type="Label" parent="CenterContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 text = "Estadisticas"
-icon = SubResource("ViewportTexture_dexn2")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer/VBoxContainer"]
 layout_mode = 2

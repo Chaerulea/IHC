@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://cvnvpwkrgqf43" path="res://assets/background.png" id="3_eg72a"]
 [ext_resource type="PackedScene" uid="uid://oireobhhu5e5" path="res://scenes/Burbujas/calculadora.tscn" id="3_xljxu"]
 [ext_resource type="Script" path="res://scenes/Burbujas/CalculadoraPosicion.gd" id="4_8qbhw"]
-[ext_resource type="Theme" uid="uid://7ldxcmnr25un" path="res://theme.tres" id="5_4y6qd"]
+[ext_resource type="Theme" uid="uid://cnerygrexvys3" path="res://theme.tres" id="5_4y6qd"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_eq8tq"]
 normal = Vector2(0, 1)

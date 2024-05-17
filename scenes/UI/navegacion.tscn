@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://duy0kbtmnmyu4"]
+[gd_scene load_steps=8 format=3 uid="uid://duy0kbtmnmyu4"]
 
 [ext_resource type="Script" path="res://scenes/UI/navegacion.gd" id="1_r6icn"]
 [ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://scenes/UI/Inicio.tscn" id="2_ic8pu"]
@@ -7,9 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://db6gx46lv4i53" path="res://scenes/UI/Estadisticas.tscn" id="5_3ionm"]
 [ext_resource type="PackedScene" uid="uid://bj658pkc4pf38" path="res://scenes/UI/Menu Juegos.tscn" id="6_2umyr"]
 
-[sub_resource type="ViewportTexture" id="ViewportTexture_7ppw2"]
-
-[sub_resource type="ViewportTexture" id="ViewportTexture_iwo0e"]
+[sub_resource type="ViewportTexture" id="ViewportTexture_kqsvn"]
 
 [node name="TabContainer" type="TabContainer"]
 anchors_preset = 15
@@ -30,9 +28,6 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 
-[node name="Button" parent="principal/CenterContainer/VBoxContainer/HBoxContainer3" index="0"]
-icon = SubResource("ViewportTexture_7ppw2")
-
 [node name="estadisticas" parent="." instance=ExtResource("5_3ionm")]
 visible = false
 layout_mode = 2
@@ -41,15 +36,15 @@ layout_mode = 2
 visible = false
 layout_mode = 2
 
-[node name="Button" parent="juegos/CenterContainer/VBoxContainer/HBoxContainer3" index="0"]
-icon = SubResource("ViewportTexture_iwo0e")
+[node name="burbucuentas" parent="juegos/CenterContainer/VBoxContainer/HBoxContainer3" index="0"]
+icon = SubResource("ViewportTexture_kqsvn")
 
 [connection signal="pressed" from="inicio/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed_iniciar"]
 [connection signal="pressed" from="cuentanosDeTi/CenterContainer/VBoxContainer/HBoxContainer4/Button" to="." method="_on_button_pressed_cuentanos_regresar"]
-[connection signal="pressed" from="principal/CenterContainer/VBoxContainer/HBoxContainer3/Button" to="." method="_on_button_pressed_estadisticas"]
 [connection signal="pressed" from="principal/CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed_cuentanos"]
 [connection signal="pressed" from="principal/CenterContainer/VBoxContainer/HBoxContainer4/Button" to="." method="_on_button_pressed_juegos"]
 [connection signal="pressed" from="estadisticas/CenterContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed_regresar_estadisticas"]
+[connection signal="pressed" from="juegos/CenterContainer/VBoxContainer/HBoxContainer4/Button" to="." method="_on_button_pressed_regresar_juegos"]
 
 [editable path="inicio"]
 [editable path="cuentanosDeTi"]

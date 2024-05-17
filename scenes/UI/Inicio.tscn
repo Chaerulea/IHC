@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://uh8sa2doy4fy"]
+[gd_scene load_steps=3 format=3 uid="uid://uh8sa2doy4fy"]
 
-[ext_resource type="Theme" uid="uid://7ldxcmnr25un" path="res://theme.tres" id="1_fvdni"]
-[ext_resource type="Texture2D" uid="uid://cbu0kd0t8ei7j" path="res://logo.svg" id="1_yynys"]
-[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="2_akrew"]
+[ext_resource type="Texture2D" uid="uid://d2wuq46oyc1a2" path="res://logo.svg" id="1_yynys"]
+[ext_resource type="FontVariation" path="res://assets/DefaultFonr.tres" id="2_akrew"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,7 +11,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(570, 16)
-theme = ExtResource("1_fvdni")
 
 [node name="PanelContainer" type="PanelContainer" parent="."]
 layout_mode = 1

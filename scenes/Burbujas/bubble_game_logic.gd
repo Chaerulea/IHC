@@ -50,7 +50,8 @@ func _input(event):
 	if(event is InputEventKey):
 		if(event.keycode == KEY_0 or event.keycode == KEY_1 or event.keycode == KEY_2 or event.keycode == KEY_3 or event.keycode == KEY_4 or event.keycode == KEY_5 or event.keycode == KEY_6 or event.keycode == KEY_7 or event.keycode == KEY_8 or event.keycode == KEY_9):
 			get_node("%input").text = get_node("%input").text + str(event.keycode - 48)
-
+		if(event.keycode == KEY_KP_0 or event.keycode == KEY_KP_1 or event.keycode == KEY_KP_2 or event.keycode == KEY_KP_3 or event.keycode == KEY_KP_4 or event.keycode == KEY_KP_5 or event.keycode == KEY_KP_6 or event.keycode == KEY_KP_7 or event.keycode == KEY_KP_8 or event.keycode == KEY_KP_9):
+			get_node("%input").text = get_node("%input").text + str(event.keycode - 4194438)
 func _on_pad_number_pressed(which):
 	get_node("%input").text = get_node("%input").text + str(which)
 

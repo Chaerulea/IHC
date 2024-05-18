@@ -24,6 +24,7 @@ func end_game():
 	print("Score: ", aciertos)
 	print("Mistakes: ", mistakes)
 	#Go back to the main menu
+	get_tree().change_scene_to_file("res://scenes/UI/navegacion.tscn")
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _physics_process(delta):

@@ -1,6 +1,6 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cnerygrexvys3"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://7ldxcmnr25un"]
 
-[ext_resource type="FontVariation" path="res://assets/DefaultFonr.tres" id="1_sonk5"]
+[ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="1_sonk5"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c2ojq"]
 

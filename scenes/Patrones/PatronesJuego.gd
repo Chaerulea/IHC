@@ -29,6 +29,7 @@ func end_game():
 	print("Mistakes: ", mistakes)
 	print("Level: ", level)
 	#Go back to the main menu
+	get_tree().change_scene_to_file("res://scenes/UI/navegacion.tscn")
 
 func _on_pattern_selected(pattern_node):
 	if pattern_node in selected:

@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=6 format=3 uid="uid://7ldxcmnr25un"]
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://7ldxcmnr25un"]
 
 [ext_resource type="FontVariation" uid="uid://csopbvw8d4jyg" path="res://assets/DefaultFonr.tres" id="1_sonk5"]
 
@@ -40,6 +40,21 @@ corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4kcue"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8yyes"]
+bg_color = Color(0.641683, 0.604173, 0.418342, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.537155, 0.461011, 0, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
 [resource]
 Button/colors/font_color = Color(0.875, 0.875, 0.875, 1)
 Button/colors/font_outline_color = Color(0, 0, 0, 1)
@@ -61,3 +76,5 @@ LineEdit/fonts/font = ExtResource("1_sonk5")
 LineEdit/styles/focus = SubResource("StyleBoxFlat_whyqn")
 LineEdit/styles/normal = SubResource("StyleBoxFlat_kdaku")
 LineEdit/styles/read_only = SubResource("StyleBoxFlat_whyqn")
+Panel/styles/panel = SubResource("StyleBoxFlat_4kcue")
+PanelContainer/styles/panel = SubResource("StyleBoxFlat_8yyes")

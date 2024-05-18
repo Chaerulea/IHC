@@ -1,5 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://duy0kbtmnmyu4"]
+[gd_scene load_steps=9 format=3 uid="uid://duy0kbtmnmyu4"]
 
+[ext_resource type="Theme" uid="uid://7ldxcmnr25un" path="res://theme.tres" id="1_c5fqs"]
 [ext_resource type="Script" path="res://scenes/UI/navegacion.gd" id="1_r6icn"]
 [ext_resource type="PackedScene" uid="uid://uh8sa2doy4fy" path="res://scenes/UI/Inicio.tscn" id="2_ic8pu"]
 [ext_resource type="PackedScene" uid="uid://dvcnmynioehs" path="res://scenes/UI/Cuentanosdeti.tscn" id="3_htflv"]
@@ -15,6 +16,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_c5fqs")
+tabs_visible = false
 script = ExtResource("1_r6icn")
 
 [node name="inicio" parent="." instance=ExtResource("2_ic8pu")]
